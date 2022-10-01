@@ -1,0 +1,87 @@
+:root{
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: 62.5%;
+}
+header{
+    display: flex;;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    background-image: url(./mobile/image-header.jpg);
+    background-position: center;;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header img{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+header .hamburgesa{
+    padding-left: 130px;
+    align-items: flex-end;
+}    
+header h1{
+    padding-top: 100px;
+    padding-bottom: 400px;
+    text-align: center;
+    font-size: 2.6rem;
+    color: var(--White);
+    background-image: url(./iconos/icon-arrow-down.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section img{
+    width: 100%;
+    min-width: 320px;
+    height: 55vh;
+}
+.transform{
+    display: flex;
+    width: 300px;
+    height: 316px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.primer-subtitulo{
+    padding-top: 30px;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue)
+}
+.transfrom-texto{
+    padding: 10px 15px;
+    line-height: 25px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--Dark-grayish-blue);
+}
+.transfrom-a{
+    font-family: 'Fraunces', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
+    text-decoration: none;
+    text-transform: uppercase;
+}
