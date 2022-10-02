@@ -167,16 +167,19 @@ section img{
     color: var(--Dark-blue);
 }
 .contenedor-clientes{
-    width: 90%;
-    height: auto;
-    margin: 50px auto 50px auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-items: center;
-    
-
+}
+.clientes{
+    width: 90%;
+    height: auto;
+    margin: 50px 40px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .clientes-titulo{
     padding-top: 20px;
@@ -187,7 +190,7 @@ section img{
 
 }
 .imagenes{
-    width: 60px;
+    max-width: 60px;
     height: 60px;
     border-radius: 50%;
 
@@ -221,5 +224,10 @@ section img{
     font-size: 0.9rem;
     font-family: 'Barlow', sans-serif;
     color: var(--Grayish-blue);
+}
+.cuadro-imagenes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
     
