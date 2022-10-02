@@ -46,7 +46,7 @@ header h1{
     background-position: center;
     background-repeat: no-repeat;
 }
-section img{
+.main-imagenes img{
     width: 100%;
     min-width: 320px;
     height: 55vh;
@@ -225,9 +225,36 @@ section img{
     font-family: 'Barlow', sans-serif;
     color: var(--Grayish-blue);
 }
+.contenedor-cuadro-imagenes{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 300px 500px;
+}    
 .cuadro-imagenes{
+    justify-content: center;
+}
+footer{
+    position: relative;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #98d8c8;
+}
+footer h1{
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    color: var(--Very-dark-desaturated-blue);
+}
+.contactos{
+    padding: 50px 50px;
+    text-align: center;
+}
+.contactos li{
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--Dark-moderate-cyan);
 }
     
