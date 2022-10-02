@@ -101,7 +101,7 @@ section img{
     font-size: 1rem;
     text-align: center;
     font-weight: bold;
-    color: var(--Dark-grayish-blue);
+    color: var(--Very-dark-grayish-blue);
 }
 .div-design{
     position: relative;
@@ -153,10 +153,10 @@ section img{
     font-size: 2rem;
     text-align: center;
     font-weight: 1000;
-    color: var(--Dark-blue)
+    color: var(--Very-dark-desaturated-blue)
 }
 .text-content{
-    padding-top: 300px;
+    padding-top: 280px;
     padding-left: 15px;
     padding-right: 15px;
     line-height: 25px;
@@ -166,3 +166,60 @@ section img{
     font-weight: bold;
     color: var(--Dark-blue);
 }
+.contenedor-clientes{
+    width: 90%;
+    height: auto;
+    margin: 50px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    
+
+}
+.clientes-titulo{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Fraunces', sans-serif;
+    color: var(--Grayish-blue);
+
+}
+.imagenes{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+.exprencia-cliente{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 25px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--Very-dark-grayish-blue);
+}
+.info-cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-cliente h4{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-family: 'Fraunces', serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
+}
+.info-cliente{
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    font-family: 'Barlow', sans-serif;
+    color: var(--Grayish-blue);
+}
+    
