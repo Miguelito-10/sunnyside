@@ -172,6 +172,7 @@ header h1{
     text-align: center;
     align-items: center;
     justify-items: center;
+    margin-bottom: 50px;
 }
 .clientes{
     width: 90%;
@@ -226,18 +227,19 @@ header h1{
     color: var(--Grayish-blue);
 }
 .contenedor-cuadro-imagenes{
+    position: relative;
     width: 100%;
     height: auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }    
 .cuadro-imagenes{
     width: 100%;
-    height: 100px;
+    height: auto;
 }
 .footer{
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
