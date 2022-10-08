@@ -9,24 +9,33 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src=./iconos/logo.svg alt="logo de sunnyside">
-            <img class="hamburgesa" src="./iconos/icon-hamburger.svg" alt="lista">
-            <h1>WE ARE CREATIVE</h1>
+        <div class="header-contenido">
+            <div class="barra-navegacion">
+                <img src=./iconos/logo.svg alt="logo de sunnyside">
+                <img class="hamburgesa" src="./iconos/icon-hamburger.svg" alt="lista">
+            </div>
+            <div class="titulo-contenedor">
+                <h1>WE ARE CREATIVE</h1>
+                <img class="flecha" src="./iconos/icon-arrow-down.svg" alt="es una imagen de una flecha">
+            </div>
         </div>
     </header>
     <section>
-        <main class="main-imagenes">
-            <img src="./mobile/image-transform.jpg" alt="es una foto de un huevo">
+        <main class="main">
+            <picture> 
+                <img class="main-imagenes" src="./mobile/image-transform.jpg" alt="es una foto de un huevo">
+            </picture>
+           
             <div class="transform">
                 <h1 class="primer-subtitulo">Transfrom your brand</h1>
 
              <p class="transfrom-texto">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
 
              <a class="transfrom-a">Learn more</a>
-
         </div>
-            <img src="./mobile/image-stand-out.jpg" alt="es una foto de un tipo de paleta">
+            <picture>
+                <img class="main-imagenes" src="./mobile/image-stand-out.jpg" alt="es una foto de un tipo de paleta">
+            </picture>
             <div class="transform">
                 <h1 class="segundo-subtitulo">Stand out to the right audience</h1>
 
@@ -122,6 +131,5 @@
 
 
     </footer>
-    
 </body>
 </html>

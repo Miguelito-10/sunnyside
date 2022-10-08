@@ -19,7 +19,6 @@ html{
     font-family: 62.5%;
 }
 header{
-    display: flex;;
     width: 100%;
     min-width: 320px;
     height: 100vh;
@@ -28,25 +27,44 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-header img{
-    padding-top: 10px;
-    padding-left: 10px;
+.header-contenido{
+    display: flex;
+    flex-direction: column;
 }
-header .hamburgesa{
-    padding-left: 130px;
-    align-items: flex-end;
+.barra-navegacion{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px 10px 15px;
+
+}
+.hamburgesa{
+    width: 30px;
+    height: 20px;
 }    
+.titulo-contenedor{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 150px;
+}
 header h1{
-    padding-top: 100px;
-    padding-bottom: 400px;
     text-align: center;
     font-size: 2.6rem;
     color: var(--White);
-    background-image: url(./iconos/icon-arrow-down.svg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
-.main-imagenes img{
+.flecha{
+    width: 35px;
+}
+.main{
+    width: 100%;
+    height: auto;
+}
+.main-imagenes{
     width: 100%;
     min-width: 320px;
     height: 55vh;
