@@ -70,20 +70,19 @@ header h1{
     height: 55vh;
 }
 .transform{
-    display: flex;
-    width: 300px;
-    height: 316px;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: center;
+    margin: 50px auto;
+    text-align: center;
+}
+.stand{
+    margin: 50px auto;
+    text-align: center;
 }
 .primer-subtitulo{
-    padding-top: 30px;
     font-family: 'Fraunces', serif;
-    font-size: 2rem;
     text-align: center;
+    font-size: 2rem;
     font-weight: 900;
-    color: var(--Very-dark-desaturated-blue)
+    color: var(--Very-dark-desaturated-blue);
 }
 .transfrom-texto{
     padding: 10px 15px;
@@ -95,47 +94,50 @@ header h1{
     color: var(--Dark-grayish-blue);
 }
 .transfrom-a{
-    padding-bottom: 20px;
     font-family: 'Fraunces', serif;
     font-size: 1.2rem;
-    text-align: center;
     font-weight: 900;
     color: var(--Very-dark-desaturated-blue);
     text-decoration: none;
     text-transform: uppercase;
 }
 .segundo-subtitulo{
-    padding: 10px 30px 10px 30px;
     font-family: 'Fraunces', serif;
-    font-size: 2rem;
     text-align: center;
-    font-weight: 1000;
-    color: var(--Very-dark-desaturated-blue)
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
 }
 .stand-texto{
-    padding: 20px 20px;
+    padding: 10px 15px;
     line-height: 25px;
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
     text-align: center;
     font-weight: bold;
-    color: var(--Very-dark-grayish-blue);
+    color: var(--Dark-grayish-blue);
+}
+.design-img{
+    position: absolute;
+    width: 100%;
+    height: 600px;
 }
 .div-design{
     position: relative;
+    width: 90%;
+    min-height: 150px;
+    padding-bottom: 100px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-around;
-    width: 100%;
-    height: 100vh;
-    background-image: url(./mobile/image-graphic-design.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
+.photography-img{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
 .div-photography{
     position: relative;
     display: flex;
@@ -145,10 +147,6 @@ header h1{
     align-content: space-around;
     width: 100%;
     height: 100vh;
-    background-image: url(./mobile/image-photography.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .secction-design-heading{
     position: absolute;
@@ -174,9 +172,6 @@ header h1{
     color: var(--Very-dark-desaturated-blue)
 }
 .text-content{
-    padding-top: 280px;
-    padding-left: 15px;
-    padding-right: 15px;
     line-height: 25px;
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
@@ -201,8 +196,7 @@ header h1{
     align-items: center;
 }
 .clientes-titulo{
-    padding-top: 20px;
-    padding-bottom: 50px;
+
     text-align: center;
     font-family: 'Fraunces', sans-serif;
     color: var(--Grayish-blue);
@@ -215,9 +209,6 @@ header h1{
 
 }
 .exprencia-cliente{
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
     line-height: 25px;
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;

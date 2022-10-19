@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> 
     <title>Sunny side</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 760px)">
 </head>
 <body>
     <header>
@@ -20,116 +22,131 @@
             </div>
         </div>
     </header>
-    <section>
-        <main class="main">
+    <main class="main"></main>
+        <section class="contenedor-transfrom">
             <picture> 
-                <img class="main-imagenes" src="./mobile/image-transform.jpg" alt="es una foto de un huevo">
+                    <source media="(min-width: 760px)" srcset="./desktop/image-transform.jpg">
+                    <img class="main-imagenes" src="./mobile/image-transform.jpg" alt="es una foto de un huevo">
             </picture>
-           
+
             <div class="transform">
                 <h1 class="primer-subtitulo">Transfrom your brand</h1>
 
-             <p class="transfrom-texto">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <p class="transfrom-texto">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
 
-             <a class="transfrom-a">Learn more</a>
-        </div>
+                <a class="transfrom-a">Learn more</a>
+            </div>
+        </section>    
+
+        <section class="contenedor-stand">  
             <picture>
+                <source media="(min-width: 760px)" srcset="./desktop/image-stand-out.jpg">
                 <img class="main-imagenes" src="./mobile/image-stand-out.jpg" alt="es una foto de un tipo de paleta">
             </picture>
-            <div class="transform">
+            <div class="stand">
                 <h1 class="segundo-subtitulo">Stand out to the right audience</h1>
 
                 <p class="stand-texto">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
 
                 <a class="transfrom-a">Learn more</a>
 
-             </div>
-        </main>
-    </section>
+            </div>
+        </section>
 
-    <section>
-        <div class="div-design">
-            <h1 class="secction-design-heading">Graphic design</h1>
+        <section class="seccion-3">
+            <picture>
+                <source media="(min-width: 760px)" srcset="./desktop/image-graphic-design.jpg">
+                <img class="design-img "src="./mobile/image-graphic-design.jpg" alt="una imagen de una cereza">
+            </picture>
+            <div class="div-design">
+                <h1 class="secction-design-heading">Graphic design</h1>
 
-            <p class="text-content">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+                <p class="text-content">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
 
-        </div>
+            </div>
+            
+            <picture>
+                <source media="(min-width: 760px" srcset="./desktop/image-photography.jpg">
+                <img class="photography-img" src="./mobile/image-photography.jpg" alt=" es una foto de una naranja">
+            </picture>
+            <div class="div-photography">
+                <h1 class="secction-photography-heading">Photography</h1>
 
-        <div class="div-photography">
-            <h1 class="secction-photography-heading">Photography</h1>
+                <p class="text-content">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
 
-            <p class="text-content">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            </div>
 
-        </div>
+        </section>
 
-    </section>
+        <section class="contenedor-clientes">
+                <h1 class="clientes-titulo"> Client testimonials</h1>
+                   <section class="contenedor-img">
+                    <article class="clientes">
 
-    <section class="contenedor-clientes">
-            <h1 class="clientes-titulo"> Client testimonials</h1>
-                <article class="clientes">
+                        <img class="imagenes" src="/imagenes/image-emily.jpg" alt="es una foto de emily">
 
-                    <img class="imagenes" src="/imagenes/image-emily.jpg" alt="es una foto de emily">
+                        <p class="exprencia-cliente">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    </article>
+                    <div class="info-cliente">
+                        <h4>Emily R</h4>
+                        <p>Marketing Director</p>
+                    </div>
+                    
+                    <article class="clientes">
 
-                    <p class="exprencia-cliente">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-                </article>
-                <div class="info-cliente">
-                    <h4>Emily R</h4>
-                    <p>Marketing Director</p>
-                </div>
-                
-                <article class="clientes">
+                        <img class="imagenes" src="/imagenes/image-thomas.jpg" alt="es una foto de thomas">
 
-                    <img class="imagenes" src="/imagenes/image-thomas.jpg" alt="es una foto de thomas">
+                        <p class="exprencia-cliente">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                    </article>
 
-                    <p class="exprencia-cliente">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-                </article>
+                    <div class="info-cliente">
+                        <h4>Thomas S</h4>
+                        <p>Chief Operating</p>
+                    </div>
 
-                <div class="info-cliente">
-                    <h4>Thomas S</h4>
-                    <p>Chief Operating</p>
-                </div>
+                    <article class="clientes">
 
-                <article class="clientes">
+                        <img class="imagenes" src="/imagenes/image-jennie.jpg" alt="es una foto de jenny">
 
-                    <img class="imagenes" src="/imagenes/image-jennie.jpg" alt="es una foto de jenny">
+                        <p class="exprencia-cliente">Officer Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                    </article>
+                    <div class="info-cliente">
+                        <h4>Jennie F.</h4>
+                        <p>Business Owner</p>
+                    </div> 
+                </section>             
+        </section>
 
-                    <p class="exprencia-cliente">Officer Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-                </article>
-                <div class="info-cliente">
-                    <h4>Jennie F.</h4>
-                    <p>Business Owner</p>
-                </div>          
-    </section>
+        <section class="contenedor-cuadro-imagenes">
+            <img class="cuadro-imagenes" src="./mobile/image-gallery-milkbottles.jpg" alt="">
+            <img class="cuadro-imagenes" src="/mobile/image-gallery-orange.jpg" alt="">
+            <img class="cuadro-imagenes" src="/mobile/image-gallery-cone.jpg" alt="">
+            <img class="cuadro-imagenes" src="/mobile/image-gallery-sugar-cubes.jpg" alt="">
+        </section>
 
-    <section class="contenedor-cuadro-imagenes">
-        <img class="cuadro-imagenes" src="./mobile/image-gallery-milkbottles.jpg" alt="">
-        <img class="cuadro-imagenes" src="/mobile/image-gallery-orange.jpg" alt="">
-        <img class="cuadro-imagenes" src="/mobile/image-gallery-cone.jpg" alt="">
-        <img class="cuadro-imagenes" src="/mobile/image-gallery-sugar-cubes.jpg" alt="">
-    </section>
+        
+        <footer class="footer">
+            <h1>Sunnyside</h1>
+            <div>
+                <ul class="contactos">
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
 
-    
-    <footer class="footer">
-        <h1>Sunnyside</h1>
-        <div>
-            <ul class="contactos">
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-
-        <div>
-            <ul class="contactos">
-                <li> <img src="./iconos/icon-facebook.svg" alt=""></li>
-                <li> <img src="./iconos/icon-instagram.svg" alt=""></li>
-                <li> <img src="./iconos/icon-twitter.svg" alt=""></li>
-                <li> <img src="./iconos/icon-pinterest.svg" alt=""></li>
-            </ul>
-        </div>
+            <div>
+                <ul class="contactos">
+                    <li> <img src="./iconos/icon-facebook.svg" alt=""></li>
+                    <li> <img src="./iconos/icon-instagram.svg" alt=""></li>
+                    <li> <img src="./iconos/icon-twitter.svg" alt=""></li>
+                    <li> <img src="./iconos/icon-pinterest.svg" alt=""></li>
+                </ul>
+            </div>
 
 
-    </footer>
+        </footer>
+    </main>
 </body>
 </html>
