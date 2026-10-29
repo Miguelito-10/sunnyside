@@ -2,151 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> 
-    <title>Sunny side</title>
+    <title>Sunnyside | Creative agency</title>
+    <meta name="description" content="Sunnyside is a full-service creative agency specializing in helping brands grow fast through graphic design and photography.">
+    <meta name="theme-color" content="#2c7566">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 760px)">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="header-contenido">
-            <div class="barra-navegacion">
-                <img src=./iconos/logo.svg alt="logo de sunnyside">
-                <img class="hamburgesa" src="./iconos/icon-hamburger.svg" alt="lista">
-            </div>
-            <div class="titulo-contenedor">
-                <h1>WE ARE CREATIVE</h1>
-                <img class="flecha" src="./iconos/icon-arrow-down.svg" alt="es una imagen de una flecha">
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+        <nav class="nav" aria-label="Main">
+            <a class="logo" href="#top">
+                <img src="./iconos/logo.svg" alt="Sunnyside" width="124" height="24">
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+                <img src="./iconos/icon-hamburger.svg" alt="" width="24" height="18">
+            </button>
+
+            <ul class="menu" id="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a class="btn" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>We are creative</h1>
+            <a class="hero__cue" href="#about" aria-label="Scroll to content">
+                <img src="./iconos/icon-arrow-down.svg" alt="" width="36" height="114">
+            </a>
         </div>
     </header>
-    <main class="main"></main>
-        <section class="contenedor-transfrom">
-            <picture> 
-                    <source media="(min-width: 760px)" srcset="./desktop/image-transform.jpg">
-                    <img class="main-imagenes" src="./mobile/image-transform.jpg" alt="es una foto de un huevo">
+
+    <main id="main">
+        <section class="split" id="about" aria-labelledby="transform-title">
+            <picture class="split__media">
+                <source media="(min-width: 48rem)" srcset="./desktop/image-transform.jpg">
+                <img src="./mobile/image-transform.jpg" alt="White egg casting a shadow on a yellow background" width="750" height="624">
             </picture>
-
-            <div class="transform">
-                <h1 class="primer-subtitulo">Transfrom your brand</h1>
-
-                <p class="transfrom-texto">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-
-                <a class="transfrom-a">Learn more</a>
+            <div class="split__body">
+                <h2 id="transform-title">Transform your brand</h2>
+                <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a class="link-more" href="#services">Learn more</a>
             </div>
-        </section>    
+        </section>
 
-        <section class="contenedor-stand">  
+        <section class="split split--reverse" aria-labelledby="stand-title">
+            <picture class="split__media">
+                <source media="(min-width: 48rem)" srcset="./desktop/image-stand-out.jpg">
+                <img src="./mobile/image-stand-out.jpg" alt="Pink goblet on a coral background" width="750" height="624" loading="lazy">
+            </picture>
+            <div class="split__body">
+                <h2 id="stand-title">Stand out to the right audience</h2>
+                <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+                <a class="link-more link-more--red" href="#projects">Learn more</a>
+            </div>
+        </section>
+
+        <section class="services" id="services" aria-labelledby="services-title">
+            <h2 class="sr-only" id="services-title">Our services</h2>
+
+            <article class="feature">
+                <picture>
+                    <source media="(min-width: 48rem)" srcset="./desktop/image-graphic-design.jpg">
+                    <img src="./mobile/image-graphic-design.jpg" alt="Two red cherries on a teal background" width="750" height="1200" loading="lazy">
+                </picture>
+                <div class="feature__body">
+                    <h3>Graphic design</h3>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+                </div>
+            </article>
+
+            <article class="feature">
+                <picture>
+                    <source media="(min-width: 48rem)" srcset="./desktop/image-photography.jpg">
+                    <img src="./mobile/image-photography.jpg" alt="A single orange on a blue background" width="750" height="1200" loading="lazy">
+                </picture>
+                <div class="feature__body">
+                    <h3>Photography</h3>
+                    <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <h2 id="testimonials-title">Client testimonials</h2>
+
+            <div class="testimonial-list">
+                <figure class="testimonial">
+                    <img src="./imagenes/image-emily.jpg" alt="Emily R." width="72" height="72" loading="lazy">
+                    <blockquote>
+                        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    </blockquote>
+                    <figcaption>
+                        <strong>Emily R.</strong>
+                        <span>Marketing Director</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="testimonial">
+                    <img src="./imagenes/image-thomas.jpg" alt="Thomas S." width="72" height="72" loading="lazy">
+                    <blockquote>
+                        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                    </blockquote>
+                    <figcaption>
+                        <strong>Thomas S.</strong>
+                        <span>Chief Operating Officer</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="testimonial">
+                    <img src="./imagenes/image-jennie.jpg" alt="Jennie F." width="72" height="72" loading="lazy">
+                    <blockquote>
+                        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                    </blockquote>
+                    <figcaption>
+                        <strong>Jennie F.</strong>
+                        <span>Business Owner</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="gallery" id="projects" aria-labelledby="projects-title">
+            <h2 class="sr-only" id="projects-title">Our projects</h2>
+
             <picture>
-                <source media="(min-width: 760px)" srcset="./desktop/image-stand-out.jpg">
-                <img class="main-imagenes" src="./mobile/image-stand-out.jpg" alt="es una foto de un tipo de paleta">
+                <source media="(min-width: 48rem)" srcset="./desktop/image-gallery-milkbottles.jpg">
+                <img src="./mobile/image-gallery-milkbottles.jpg" alt="Milk bottles with a small cloud on a blue background" width="376" height="376" loading="lazy">
             </picture>
-            <div class="stand">
-                <h1 class="segundo-subtitulo">Stand out to the right audience</h1>
-
-                <p class="stand-texto">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-
-                <a class="transfrom-a">Learn more</a>
-
-            </div>
-        </section>
-
-        <section class="seccion-3">
             <picture>
-                <source media="(min-width: 760px)" srcset="./desktop/image-graphic-design.jpg">
-                <img class="design-img "src="./mobile/image-graphic-design.jpg" alt="una imagen de una cereza">
+                <source media="(min-width: 48rem)" srcset="./desktop/image-gallery-orange.jpg">
+                <img src="./mobile/image-gallery-orange.jpg" alt="Orange slice on a white plate over an orange background" width="376" height="376" loading="lazy">
             </picture>
-            <div class="div-design">
-                <h1 class="secction-design-heading">Graphic design</h1>
-
-                <p class="text-content">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-
-            </div>
-            
             <picture>
-                <source media="(min-width: 760px" srcset="./desktop/image-photography.jpg">
-                <img class="photography-img" src="./mobile/image-photography.jpg" alt=" es una foto de una naranja">
+                <source media="(min-width: 48rem)" srcset="./desktop/image-gallery-cone.jpg">
+                <img src="./mobile/image-gallery-cone.jpg" alt="Waffle ice cream cone on a blue background" width="376" height="376" loading="lazy">
             </picture>
-            <div class="div-photography">
-                <h1 class="secction-photography-heading">Photography</h1>
-
-                <p class="text-content">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-
-            </div>
-
+            <picture>
+                <source media="(min-width: 48rem)" srcset="./desktop/image-gallery-sugarcubes.jpg">
+                <img src="./mobile/image-gallery-sugar-cubes.jpg" alt="Stacked sugar cubes on a coral background" width="376" height="376" loading="lazy">
+            </picture>
         </section>
-
-        <section class="contenedor-clientes">
-                <h1 class="clientes-titulo"> Client testimonials</h1>
-                   <section class="contenedor-img">
-                    <article class="clientes">
-
-                        <img class="imagenes" src="/imagenes/image-emily.jpg" alt="es una foto de emily">
-
-                        <p class="exprencia-cliente">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-                    </article>
-                    <div class="info-cliente">
-                        <h4>Emily R</h4>
-                        <p>Marketing Director</p>
-                    </div>
-                    
-                    <article class="clientes">
-
-                        <img class="imagenes" src="/imagenes/image-thomas.jpg" alt="es una foto de thomas">
-
-                        <p class="exprencia-cliente">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-                    </article>
-
-                    <div class="info-cliente">
-                        <h4>Thomas S</h4>
-                        <p>Chief Operating</p>
-                    </div>
-
-                    <article class="clientes">
-
-                        <img class="imagenes" src="/imagenes/image-jennie.jpg" alt="es una foto de jenny">
-
-                        <p class="exprencia-cliente">Officer Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-                    </article>
-                    <div class="info-cliente">
-                        <h4>Jennie F.</h4>
-                        <p>Business Owner</p>
-                    </div> 
-                </section>             
-        </section>
-
-        <section class="contenedor-cuadro-imagenes">
-            <img class="cuadro-imagenes" src="./mobile/image-gallery-milkbottles.jpg" alt="">
-            <img class="cuadro-imagenes" src="/mobile/image-gallery-orange.jpg" alt="">
-            <img class="cuadro-imagenes" src="/mobile/image-gallery-cone.jpg" alt="">
-            <img class="cuadro-imagenes" src="/mobile/image-gallery-sugar-cubes.jpg" alt="">
-        </section>
-
-        
-        <footer class="footer">
-            <h1>Sunnyside</h1>
-            <div>
-                <ul class="contactos">
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-
-            <div>
-                <ul class="contactos">
-                    <li> <img src="./iconos/icon-facebook.svg" alt=""></li>
-                    <li> <img src="./iconos/icon-instagram.svg" alt=""></li>
-                    <li> <img src="./iconos/icon-twitter.svg" alt=""></li>
-                    <li> <img src="./iconos/icon-pinterest.svg" alt=""></li>
-                </ul>
-            </div>
-
-
-        </footer>
     </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="site-footer__inner">
+            <p class="footer-brand">Sunnyside</p>
+
+            <nav aria-label="Footer">
+                <ul class="footer-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+
+            <ul class="social">
+                <li><a href="#" aria-label="Facebook"><img src="./iconos/icon-facebook.svg" alt="" width="20" height="20"></a></li>
+                <li><a href="#" aria-label="Instagram"><img src="./iconos/icon-instagram.svg" alt="" width="20" height="20"></a></li>
+                <li><a href="#" aria-label="Twitter"><img src="./iconos/icon-twitter.svg" alt="" width="20" height="20"></a></li>
+                <li><a href="#" aria-label="Pinterest"><img src="./iconos/icon-pinterest.svg" alt="" width="20" height="20"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
